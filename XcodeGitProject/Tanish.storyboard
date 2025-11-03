@@ -15,8 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanish's StoryBoard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdR-7a-9Ac">
+                                <rect key="frame" x="31" y="172" width="331" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEw-t4-APY">
+                                <rect key="frame" x="117" y="351" width="158" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAr-Ba-lRi">
+                                <rect key="frame" x="95" y="553" width="203" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Add"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EdR-7a-9Ac" secondAttribute="trailing" constant="31" id="Drv-zV-xdL"/>
+                            <constraint firstItem="tAr-Ba-lRi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="95" id="axy-yw-GK7"/>
+                            <constraint firstItem="EdR-7a-9Ac" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="31" id="fdH-4s-iKr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tAr-Ba-lRi" secondAttribute="bottom" constant="147" id="lER-ho-spx"/>
+                            <constraint firstItem="EdR-7a-9Ac" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nku-eF-76w"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tAr-Ba-lRi" secondAttribute="trailing" constant="95" id="ql0-si-PgN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5ez-6C-TzQ"/>
                 </viewController>
@@ -47,6 +75,9 @@
     </scenes>
     <resources>
         <image name="brain.head.profile" catalog="system" width="120" height="128"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
